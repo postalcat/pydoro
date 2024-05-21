@@ -1,12 +1,14 @@
 body {
     font-family: PingFangSC-Light,'helvetica neue','hiragino sans gb',tahoma,
-                     'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+                        'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+    background-color: #292929;
+    color :#79cee8;
 }
 
 .time-input {
-  width: 120px;
-  height: 25px;
-  border-radius: 5px;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
 }
 
 .startButton {
@@ -90,25 +92,29 @@ body {
 	top:1px;
 }
 
-.pomodoro {
-	background-color:#44c767;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #18ab29;
+.longrestButton {
+	-moz-box-shadow:inset 0 1px 0 0 #fce2c1;
+	-webkit-box-shadow:inset 0 1px 0 0 #fce2c1;
+	box-shadow:inset 0 1px 0 0 #fce2c1;
+	background-color:#48d186;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #6abb90;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:17px;
+	font-size:15px;
+	font-weight:bold;
 	padding:6px 7px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+	text-shadow:0 1px 0 #6abb90;
 }
-.pomodoro:hover {
-	background-color:#5cbf2a;
+.longrestButton:hover {
+	background-color:#408862;
 }
-.pomodoro:active {
+.longrestButton:active {
 	position:relative;
 	top:1px;
 }
@@ -143,22 +149,32 @@ body {
     margin: auto;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.image-container img {
+    height:30%;
+    max-width: 300x; /* Ensure image doesn't exceed container width */
+    max-height: 290px;
+}
+
+
 .timer {
-    height: 85%;
+    height: 25%;
     width: 100%;
-    padding: 0;
-    margin: 0;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
     align-items: center;
     justify-content: center;
     font-family: FranklinGothic, Verdana, Arial, sans-serif;
-    font-size: 120px;
+    font-size: 100px;
     font-weight: bold;
-    color: #000;
+    color:#d5d5d5;
 }
 
 .quote {
@@ -170,12 +186,12 @@ body {
 }
 
 .footer {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #d5d5d5;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #d5d5d5;
 }
 
 /* responsive media queries */
@@ -208,7 +224,7 @@ body {
         font-size: 120px;
     }
 
-    .github, .quote {
+    .quote {
         display: block;
     }
 }
